@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:gravity="end"
+        android:textSize="24sp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="16dp">
+
+        <!-- Buttons for digits and operators -->
+        <Button
+            android:text="7"
+            android:onClick="onButtonClick"/>
+        <!-- Add buttons for 0-9 and operators +, -, *, /, % -->
+
+        <Button
+            android:text="="
+            android:onClick="onCalculateClick"/>
+    </GridLayout>
+</LinearLayout>
